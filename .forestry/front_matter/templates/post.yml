@@ -22,7 +22,9 @@ fields:
 - type: text
   name: layout
   label: Layout
-  hidden: true
+  hidden: false
   default: post
+  config:
+    required: true
 pages:
 - _posts/another-test-post.md
