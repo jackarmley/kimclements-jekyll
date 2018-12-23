@@ -3,13 +3,19 @@
 **/
 
 .site-header {
+  background: transparent url('../assets/header-image.png') top left/ 30rem repeat;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 2rem;
+  min-height: 20vh;
 }
 
 .site-title {
+  color: black;
+  font-weight: bold;
   padding: 2rem;
+  text-decoration: none;
 }
 
 .site-nav {
@@ -19,6 +25,8 @@
   a {
     display: block;
     padding: 2rem;
+    color: black;
+    text-decoration: none;
   }
 }
 
@@ -26,6 +34,7 @@
   width: auto;
   max-width: var(--site-maxwidth);
   margin: auto;
+  padding: 2rem;
 }
 
 .site-footer {
