@@ -31,3 +31,4 @@ fields:
   default: post
 pages:
 - _posts/another-test-post.md
+- _posts/another-test.md
