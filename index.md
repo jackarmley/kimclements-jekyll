@@ -1,4 +1,6 @@
 ---
 title: Home
-layout: default
+layout: home
 ---
+
+Hi! I am Kim.

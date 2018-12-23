@@ -1,0 +1,29 @@
+/**
+* Layout
+**/
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.site-title {
+  padding: 2rem;
+}
+
+.site-nav {
+  ul {
+    display: flex;
+  }
+  a {
+    display: block;
+    padding: 2rem;
+  }
+}
+
+.site-container {
+  width: auto;
+  max-width: var(--site-maxwidth);
+  margin: auto;
+}

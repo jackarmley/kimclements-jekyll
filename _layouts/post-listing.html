@@ -2,12 +2,18 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-  <article>
-    <figure>
-      <a href="{{ post.url }}">
-        <img src="{{ post.image }}" />
-      </a>
-    </figure>
-  </article>
-{% endfor %}
+{%- if site.posts.size > 0 -%}
+<div class="postgroup">
+  {% for post in site.posts %}
+    <article class="postgroup-item">
+      <figure>
+        <a href="{{ post.url }}">
+          <img src="{{ post.image }}" />
+        </a>
+      </figure>
+    </article>
+  {% endfor %}
+</div>
+{%- else -%}
+  <p>No posts yet!</p>
+{%- endif -%}
