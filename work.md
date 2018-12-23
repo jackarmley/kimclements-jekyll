@@ -1,8 +1,9 @@
 ---
 title: Work
 layout: post-listing
-permalink: /work/
-menus: header
----
+permalink: "/work/"
+menu:
+  header: {}
 
-My work
+---
+My work.
