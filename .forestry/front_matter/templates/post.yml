@@ -29,6 +29,3 @@ fields:
     - post
   label: Layout
   default: post
-pages:
-- _posts/another-test-post.md
-- _posts/another-test.md
