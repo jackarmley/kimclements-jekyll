@@ -1,8 +1,9 @@
 ---
 title: About
 layout: page
-permalink: /about/
-menus: header
----
+permalink: "/about/"
+menu:
+  header: {}
 
-About me
+---
+About me and stuff
