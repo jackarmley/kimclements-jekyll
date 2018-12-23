@@ -6,6 +6,7 @@
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(var(--postgroup-item-width), 1fr));
+  grid-auto-flow: dense;
   &-item {
     figure {
       padding-top: 100%;
@@ -28,6 +29,14 @@
       img {
         filter: grayscale(100%);
         transform: scale(1.2);
+      }
+    }
+
+    @media (min-width: 600px) {
+      &:nth-child(1) {
+        color: red;
+        grid-column:1 / span 2;
+        grid-row: 1 / span 2;
       }
     }
   }
