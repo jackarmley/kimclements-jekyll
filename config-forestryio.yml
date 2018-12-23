@@ -2,7 +2,7 @@
 title: Kim Clements
 email: your-email@example.com
 description: Illustrator in London. Owns lots of jumpers
-baseurl: ''
+baseurl: "/kimclements-jekyll"
 url: ''
 twitter_username: jekyllrb
 github_username: jekyll
