@@ -3,7 +3,8 @@ title: About
 layout: page
 permalink: "/about/"
 menu:
-  header: {}
+  header:
+    weight: 3
 
 ---
 About me and stuff

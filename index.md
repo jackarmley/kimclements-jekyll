@@ -1,7 +1,9 @@
 ---
 title: Home
 layout: home
-menus: header
----
+menu:
+  header:
+    weight: 1
 
+---
 Hi! I am Kim.
