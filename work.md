@@ -3,7 +3,8 @@ title: Work
 layout: post-listing
 permalink: "/work/"
 menu:
-  header: {}
+  header:
+    weight: 2
 
 ---
 My work.
