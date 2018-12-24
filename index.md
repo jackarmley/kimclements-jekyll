@@ -1,6 +1,6 @@
 ---
-title: Home
-layout: home
+title: Hello
+layout: post-listing
 ---
 
-Hi! I am Kim.
+My name is Kim. I am an illustrator based in London.
