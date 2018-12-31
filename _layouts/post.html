@@ -1,28 +1,37 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <img src="{{ page.image | relative_url}}" />
+<article class="post">
+  <figure class="post-image">
+    <img src="{{ page.image | relative_url}}" alt="{{page.title}} illustration"/>
+  </figure>
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      {{ page.date | date: date_format }}
+    </time>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+{%- if page.previous || page.next -%}
+  <aside class="post-pagination">
+    {%- if page.previous -%}
+      <section class="post-pagination-card">
+        <span class="post-pagination-card-header">Previous</span>
+        <a class="post-pagination-card-link" href="{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+      </section>
+    {%- endif -%}
+    {%- if page.next -%}
+      <section class="post-pagination-card">
+        <span class="post-pagination-card-header">Next</span>
+        <a class="post-pagination-card-link" href="{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+      </section>
+    {%- endif -%}
+  </aside>
+{%- endif -%}

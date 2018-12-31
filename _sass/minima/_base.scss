@@ -2,6 +2,8 @@
 * Base styles
 **/
 
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Maven+Pro|Contrail+One|Montserrat');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,6 +32,13 @@ html {
 
 body {
   color: var(--base-color);
-  font: normal normal 160%/1.5 sans-serif;
+  font: normal normal 160%/1.7 var(--font-baseface);
 }
 
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+p + p {
+  margin-top: 1em;
+}

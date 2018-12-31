@@ -1,7 +1,11 @@
 :root {
   --base-color: #333;
-  --link-color: #999;
-  --site-maxwidth: 100rem;
+  --link-color: #333;
+  --site-maxwidth: 120rem;
+  --page-maxwidth: 80rem;
   --postgroup-item-width: 20rem;
   --fontsize-pagetitle: 6rem;
+  --fontsize-suptitle: 1rem;
+  --font-baseface: 'Montserrat', sans-serif;
+  --font-headingface: 'Abril Fatface', sans-serif;
 }
